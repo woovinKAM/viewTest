@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<div th:replace="~{fragments/header :: header}"></div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/Home.css" rel="stylesheet">
+    <title>Home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<div class="container">
+    
+    <div th:replace="~{fragments/bodyHeader :: bodyHeader}"></div>
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    
+    <div class="sidebar"><br>
+        <div class="menu-content">
+            <div class="jumbotron">
+                <h1>실시간 테이블 조회 시스템</h1>
+                <p class="lead">실시간 테이블 조회</p>
+            </div>
+            <ul class="menu-list">
+                <li><a href="/restaurant">식당 리스트</a></li>
+                <li><a href="/restaurantsearchname">식당 조회</a></li>
+            </ul>
+            <p class="lead">상품 기능</p>
+            <ul class="menu-list">
+                <li><a href="/reservation/reservationcheck">예약조회</a></li>
+                <li><a href="/items">준비중</a></li>
+            </ul>
+            <p class="lead">주문 기능</p>
+            <ul class="menu-list">
+                <li><a href="/order">준비중</a></li>
+                <li><a href="/orders">준비중</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+
+        
+    </div>
+    <div th:replace="~{fragments/footer :: footer}"></div>
+</div>
+</body>
+</html>
